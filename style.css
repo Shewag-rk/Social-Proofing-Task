@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  --color: hsl(228, 45%, 44%);
+  --review-bar-color: hsl(290, 30%, 96%);
+  --font-family: "League Spartan", sans-serif;
+  --testimonial-bg-color: hsl(301, 45%, 22%);
+  --testimonial-font-color: hsl(0, 0%, 100%);
+  --soft-pink-color:hsl(333, 80%, 67%);
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: var(--testimonial-bg-color);
+  font-family: var(--font-family);
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, right bottom;
+  background-size: 30%, 60%;
+  background-repeat: no-repeat, no-repeat;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  min-width: 1300px;
+}
+.content-top {
+  width: 100%;
+  padding: 3em 0;
+  display: flex;
+  gap: 20px;
+}
+.hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-content{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.content-top h1 {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+}
+.content-top p {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1em;
+}
+.bar-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.review-star {
+  width: 50%;
+  padding: 0.9em;
+  border-radius: 0.5em;
+  background-color: var(--review-bar-color);
+}
+.report-gru {
+  width: 50%;
+  padding: 0.9em;
+  border-radius: 0.5em;
+  background-color: var(--review-bar-color);
+  margin-left: 2em;
+}
+.Best-Tech {
+  width: 50%;
+  padding: 0.9em;
+  border-radius: 0.5em;
+  background-color: var(--review-bar-color);
+  margin-left: 3.9em;
+}
+.second-container {
+  width: 100%;
+}
+.testimonial {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  gap: 20px;
+}
+.header-Testimonial {
+  display: flex;
+}
+.testimonial-div{
+    width: 30%;
+}
+.header-content{
+    width: 100%;
+    padding-top: 0.5rem;
+}
+.testimonial-image {
+  width: 70%;
+  border-radius: 50%;
+}
+.header-Testimonial span{
+    color: var(--soft-pink-color);
+}
+.second-container h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--testimonial-font-color);
+}
+.second-container p {
+  margin: 0;
+  width: 100%;
+  color: var(--testimonial-font-color);
+  padding-top: 15px;
+}
+.colton-Smit {
+  width: 25%;
+  padding: 1.5em;
+  border-radius: 5px;
+  background-color: var(--testimonial-bg-color);
+}
+.Irene-Roberts {
+  width: 25%;
+  padding: 1.5em;
+  border-radius: 5px;
+  background-color: var(--testimonial-bg-color);
+  position: relative;
+  top: 15px;
+}
+.Anne-Wallace {
+  width: 25%;
+  padding: 1.5em;
+  border-radius: 5px;
+  background-color: var(--testimonial-bg-color);
+  position: relative;
+  top: 25px;
+}
+
+
+/* Media Query  */
+
+@media (max-width: 480px){
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--testimonial-bg-color);
+    font-family: var(--font-family);
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, right bottom;
+    background-size: 30%, 60%;
+    background-repeat: no-repeat, no-repeat;
+    margin: 0;
+    border: 2px solid black;
+  }
+  .container{
+    width: 100%;
+    border: 2px solid yellow;
+  }
+  .hero-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-top{
+    width: 100;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .bar-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .content-top h1{
+    width: 50%;
+    font-size: 5em;
+    text-align: center;
+  }
+  .content-top p{
+    width: 50%;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+}
